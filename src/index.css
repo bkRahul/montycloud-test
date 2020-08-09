@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.d-flex {
+ display: flex;
+ align-items: center;
+}
+
+.df-col {
+  flex-direction: column;
+}
+
+.df-row {
+  flex-direction: row;
+}
+
+.df-wrap {
+  flex-wrap: wrap;
+}
+
+.df-space-bet {
+  justify-content: space-between;
+}
+
+p {
+  margin: 4px 0 10px;
+}
+
+.text-center {
+  text-align: center;
+}
