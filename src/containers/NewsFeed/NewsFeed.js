@@ -5,8 +5,7 @@ import classes from "./NewsFeed.module.css";
 import * as newsActions from "../../store/actions/index";
 
 class NewsFeed extends Component {
-  componentWillMount() {
-
+  componentDidMount() {
     if (this.props.match.params.id) {
       let currentPage;
       let pageLimit;
@@ -19,7 +18,6 @@ class NewsFeed extends Component {
   }
 
   componentDidUpdate(prevProps) {
-
     if (this.props.newsData) {
       if (
         this.props.match.params.id &&
@@ -50,7 +48,7 @@ class NewsFeed extends Component {
         })}
       </div>
     ) : (
-      "News feed empty please try again"
+      "Loading"
     );
   }
 }
